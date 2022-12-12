@@ -91,7 +91,9 @@ body{
  
  /* APAGAR fundo de cada section */
 #green {
+  padding-top: 10px;
     background-color: #baffc9;
+    background-color: #222222;
   }
 #blue {
     background-color:   #bae1ff;
@@ -106,6 +108,7 @@ body{
 
 .btn-nav a{
 color:black;
+color: #F7DB01;
 text-decoration: none;
 text-transform: uppercase;
 }
