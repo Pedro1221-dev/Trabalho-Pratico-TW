@@ -18,4 +18,4 @@ ul.pagination li a.active {
     color: white;
 }
 
-ul.pagination li a:hover:not(.active) {background-color: #ddd;}
+ul.pagination li a:hover:not(.active) {background-color: #ece80b;}
