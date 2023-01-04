@@ -30,15 +30,6 @@ body{
   justify-items: center;
   align-items: center;
 }
- /* ATENÇAO APAGAR*/
-.navbar-2{
-  display: grid;
-  grid-template-columns: repeat(8,1fr);
-  grid-template-rows: 1fr;
-  justify-items: center;
-  align-items: center;
-}
- /* ATENÇAO APAGAR*/
 .footer{
   display: grid;
   grid-template-columns: repeat(3,1fr);
@@ -74,6 +65,7 @@ input[type=email] {
   }
 #blue {
     background-color:   #bae1ff;
+    padding-top: 25px;
   }
 #orange {
     background-color: #ffdfba;
