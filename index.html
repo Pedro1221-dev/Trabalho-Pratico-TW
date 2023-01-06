@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0bd012cb65.js"></script>
+    
+    <title>Grid Layout</title>
+</head>
+<body>
+  
+  <div class="grid">
+    <section id="bckNavbar">
+       <!--NAVBAR-->
+      <div class="navbar" id="navbar">
+       <img src="simbolo giao s-fundo.png" alt="Home" width="45px" height="45px">
+          <p></p>
+          <p><a href="#">Equipa</a></p>
+          <p><a href="#">Loja</a></p>
+          <p></p>
+        <p>
+         <a href="#"><i class="fa-solid fa-search"></i></a>
+         <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+         <a href="#"><i class="fa-solid fa-user"></i></a>
+          </a>
+        </p>
+      </div>
+      <!-- FIM NAVBAR-->
+      </section>
+
+
+    <section id="white">
+        <div class="grid-conteudo">
+            <!-- INICIO SLIDESHOW-->
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                <img src="image1.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                <img src="image2.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                <img src="image3.jpg" style="width:100%">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+            
+               
+                <div class="dots">
+                    <div style="text-align:center">	
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
+                    </div>
+                </div>
+            </div>
+            <!-- FIM SLIDESHOW-->
+            <div class="grid-noticias">
+                <!-- INICIO Noticias CARDS-->
+                <!-- Noticia CARD Nº1-->
+                <div class="property-card">
+                        <a href="#">
+                            <div class="property-image"></div>
+                        </a>
+                    <div class="property-description">
+                        <h5> Card Title </h5>
+                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
+                    </div>
+                </div>
+                <!-- Noticia CARD Nº2-->
+                <div class="property-card">
+                    <a href="#">
+                        <div class="property-image"></div>
+                    </a>
+                    <div class="property-description">
+                        <h5> Card Title </h5>
+                        <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
+                    </div>
+                </div>
+            <!-- FIM Noticias CARDS-->
+
+            </div>
+            
+        </div>
+    </section>
+    <!-- INICIO FOOTER -->
+    <section id="bckFooter">
+      <div class="footer">
+        <p>FOOTER</p>
+        <section id="c1_footer">
+          <ul>
+            <li><i class="fa-solid fa-location-dot"></i></li>
+            <li><i class="fa-solid fa-phone"></i><a href="tel:+351 912345678"> +351912345678</a></li>
+            <li><i class="fa-solid fa-envelope"></i><a href = "mailto: geral-cdcrgiao@gmail.com"> geral-cdcrgiao@gmail.com</a></li>
+          </ul>
+        </section>
+        <section id="c2_footer">
+          <p>Subescrever newsletter com o teu email</p>
+            <form action="grid.html" method="GET">   
+              <br>
+              <input type="email" name="email" id="email" placeholder="Escreve aqui o teu email">
+              <button type="submit" aria-label="Submeter newsletter"><i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+        </section>
+        <section id="c3_footer">
+          <p>Redes Sociais:</p>
+          <ul> 
+              <li><a href="#facebook"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="#twt"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="#instagram"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#youtube"><i class="fa-brands fa-youtube"></i></a></li>
+          </ul>
+        </section>
+      </div>
+      </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
