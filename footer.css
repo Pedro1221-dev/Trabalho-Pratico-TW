@@ -6,7 +6,7 @@
     margin:0
   }
   #blue {
-    background-color:   #bae1ff;
+    background-color:   #ffffff;
     min-height: 100vh;
   }
   /*Grid Pagina completa*/
@@ -44,7 +44,7 @@
   z-index: 2;
 }
 
-.sticky {
+.navbar {
   position: fixed;
   top: 0;
   width: 100%;
