@@ -1,9 +1,11 @@
 * {
     box-sizing: border-box;
     font-family: Solway;
+    
   }
   body{
-    margin:0
+    margin:0;
+    overflow-x: hidden;
   }
   #white {
     background-color:white;
@@ -18,9 +20,13 @@
   }
   /*Navbar*/
    #bckNavbar {
-    padding-top: 10px;
+    padding-top: 10px;   
     background-color: #22222200;
+    background-color: #f7f7f7;
     z-index: 2;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
   }
   
   .sticky {
@@ -250,7 +256,23 @@
         {
         height:80vh;
         }
-
+        /*Tabela de Classificao*/
+        #classificacao{
+          border-collapse: collapse;
+        }
+        .classificacao table{
+          width: 100%;
+        }
+        .classificacao{
+          width: 50%; 
+        }
+        .classificacao th{
+          background-color: #04AA6D;
+          color: white;
+        }
+        .classificacao td{
+          text-align: center;
+        }
 
 
 
