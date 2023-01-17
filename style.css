@@ -260,11 +260,11 @@
         #classificacao{
           border-collapse: collapse;
         }
+        .classificacao{
+          width: 100%; 
+        }
         .classificacao table{
           width: 100%;
-        }
-        .classificacao{
-          width: 50%; 
         }
         .classificacao th{
           background-color: #04AA6D;
@@ -274,6 +274,15 @@
           text-align: center;
         }
 
+        .next-match{
+          width: 100%;
+          text-align: center;
+        }
+
+        .flex-tbl-next{
+          display: flex;
+          align-items: baseline;
+        }
 
 
 /*Footer*/
