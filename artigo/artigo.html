@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Article</title>
+      <script src="../scripts/scripts.js"></script>
+      <link rel="stylesheet" href="../styles/style_artigo.css">
+      <link rel="icon" href="/Fotos/simbolo_giao.png" type="image/x-icon">
+      <script src="https://kit.fontawesome.com/0bd012cb65.js"></script>
+   </head>
+   <section id="bckNavbar">
+      <!--NAVBAR-->
+      <div class="navbar" id="navbar">
+         <img src="../images/giaoLogo.png" alt="Home" width="45px" height="45px">
+         <p></p>
+         <p><a href="#">Equipa</a></p>
+         <p><a href="#">Loja</a></p>
+         <p></p>
+         <p>
+            <a href="#"><i class="fa-solid fa-search"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+            </a>
+         </p>
+      </div>
+      <!-- FIM NAVBAR-->
+   </section>
+   <body>
+      <div class="parent">
+         <div class="div1"> 
+            <img class="item" src="../images/artigos/camisolaPrincipal.png">
+         </div>
+         <br>
+         <div class="parte2">
+            <div class="tudo2">
+               <div class="descricoes">
+                  <h1>Camisola Principal</h1>
+                  <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit..</h4>
+               </div>
+               <div class="primeiro">
+                  <article class="produto">
+                     <h2>Preço - 50€</h2>
+                     <div class="selectQtd">
+                        <input type="number" id="quantidade" value="1" valorinit="1" class="qtd" min="1">
+                        <br>
+                     </div>
+                     <div class="butoes">
+                        <!-- HTML !-->
+                        <button class="button" onclick="adicionarCarrinho()">Adicionar ao Carrinho</button>
+                        <button class="button" onclick="comprarAgora()"><a style="text-decoration: none; color: white;" href="../pagina_checkout.html">Comprar Agora</a></button>
+                     </div>
+                  </article>
+               </div>
+               <div class="segundo">
+                  <article class="detalhes">
+                     <h2>Detalhes</h2>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> 
+                     Quos, iure enim non unde ratione aperiam beatae consectetur<br>
+                     amet laborum quidem dolore itaque repellat earum dolor iste<br>
+                     odio consequuntur blanditiis optio! Lorem ipsum, dolor sit<br>
+                     amet consectetur adipisicing elit. Itaque doloremque voluptatum<br>
+                     laboriosam impedit dolor. Quidem inventore totam aliquam quasi<br>
+                     tenetur impedit amet vero iusto, asperiores, quaerat aut molestias,<br>
+                     fugiat reprehenderit?
+                  </article>
+               </div>
+            </div>
+         </div>
+      </div>
+      <br> <br>
+      <section id="bckFooter">
+         <div class="footer">
+            <section id="c1_footer">
+               <ul>
+                  <li><i class="fa-solid fa-location-dot"></i></li>
+                  <li><i class="fa-solid fa-phone"></i><a href="tel:+351 912345678"> +351912345678</a></li>
+                  <li><i class="fa-solid fa-envelope"></i><a href = "mailto: geral-cdcrgiao@gmail.com"> geral-cdcrgiao@gmail.com</a></li>
+               </ul>
+            </section>
+            <section id="c2_footer">
+               <p>Subescrever newsletter com o teu email</p>
+               <form action="grid.html" method="GET">   
+                  <br>
+                  <input type="email" name="email" id="email" placeholder="Escreve aqui o teu email">
+                  <button type="submit" aria-label="Submeter newsletter"><i class="fa-solid fa-arrow-right"></i></button>
+               </form>
+            </section>
+            <section id="c3_footer">
+               <p>Redes Sociais:</p>
+               <ul>
+                  <li><a href="#facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                  <li><a href="#twt"><i class="fa-brands fa-twitter"></i></a></li>
+                  <li><a href="#instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li><a href="#youtube"><i class="fa-brands fa-youtube"></i></a></li>
+               </ul>
+            </section>
+         </div>
+      </section>
+   </body>
+</html>

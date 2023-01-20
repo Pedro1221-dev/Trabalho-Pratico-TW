@@ -74,7 +74,7 @@ function atualizarCarrinho() {
 
    preco = (preco * qtd).toFixed(2);
 
-   if (garrafaqtd != 0) {
+   if (qtd != 0) {
       var text = "<tr><th>"
       text += nome + "</th><th>" + qtd + "</th><th>" + preco + "€</th></tr>"
       document.getElementById("tabela").innerHTML += text
