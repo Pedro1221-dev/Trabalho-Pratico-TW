@@ -125,17 +125,43 @@ footer{
   
   }
   
-  @media screen and (max-width: 550px){
+  @media screen and (min-width: 350px) and (max-width: 680px){
     .page {
         border-radius: 8px;
         box-shadow: 0 9px 50px 4px rgba(0, 0, 0, .4);
         background: white;
         width: 50%;
-        height: 50%;
+        height: 250px;
         display: flex;
         flex-direction: row;
         overflow: hidden;
     }
 
+    
+    .page .about {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        max-width: 50%;
+        justify-content: space-between;
+    }
+    .page .about .main .title {
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 15px;
+        padding: 16px 0 32px 0;
+        font-weight: 400;
+    }
+    .page .about .main .description p {
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 5px;
+        line-height: 3px;
+        padding-bottom: 7px;
+    }
+    .page .about .controls .btm {
+        padding: 5px;
+        background: #ece80b;
+        text-decoration: none;
+    }
+  
   }
 
