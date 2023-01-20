@@ -3,52 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/Trabalho-Pratico-TW/styles/login.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Trabalho-Pratico-TW/styles/css_login.css">
-    <script src="/Trabalho-Pratico-TW/styles/script_login.js"></script>
-    <script src="https://kit.fontawesome.com/0bd012cb65.js"></script>
-    <title>Document</title>
+    <title>Login</title>
 </head>
 <body>
-    <div class="grid">
-        <section id="bckNavbar">
-           <!--NAVBAR-->
-          <div class="navbar" id="navbar">
-           <img src="simbolo giao s-fundo.png" alt="Home" width="45px" height="45px">
-              <p></p>
-              <p><a href="#">Equipa</a></p>
-              <p><a href="#">Loja</a></p>
-              <p></p>
-            <p>
-             <a href="#"><i class="fa-solid fa-search"></i></a>
-             <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-             <a href="#" onclick="openForm()"><i class="fa-solid fa-user"></i></a>
-              </a>
-            </p>
-          </div>
-    
-    
-    <div class="form-popup" id="myForm">
-        <div class="wrapper">
-        <form class="login">
-        
-            <p class="title">Log in</p>
-            <div class="icon">
-              <a href="#close" onclick="closeForm()"><i class="fa-solid fa-xmark"></i></a>
-            </div>
-            <input type="text" placeholder="Username" autofocus required/>
-            <i class="fa fa-user"></i>
-            <input type="password" placeholder="Password" required/>
-            <i class="fa fa-key"></i>
-            <a href="#registo">Não tem conta? Crie uma</a>
-          <br>
-           
-          <button>
-              <i class="spinner"></i>
-              <span class="state">Log in</span>
-            </button>
-          
-            
-        </form>
+    <div class="login-page">
+        <div class="form">
+            <form class="login-form">
+                <h3>Login</h3>
+                <input type="text" placeholder="Login" id="login">
+                <input type="password" placeholder="Senha" id="senha">
+                <input type="submit" onclick="logar(); return false">
+            </form>
+        </div>
+    </div>
+<script src="login.js"></script>
 </body>
 </html>
