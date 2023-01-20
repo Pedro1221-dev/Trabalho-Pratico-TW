@@ -21,9 +21,7 @@
 #portugal {
   background-image: url("https://trinket-user-assets.trinket.io/683297744b64f1c1591852599c3bf60c3b77e0f7-6389efb130e8f93c501a2b9a.png");
 }
-#brasil {
-  background-image: url("https://trinket-user-assets.trinket.io/6893069633da15d32cf5937a0f49cacf4b1182a6-6390af1330e8f93c50581528.jpg");
-}
+
 .title {
   font-weight: 600;
 }
@@ -33,6 +31,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 
 h1 {
   font-size: 1.8rem;
@@ -75,6 +74,7 @@ h6 {
   bottom: -10px;
   opacity: 0.6;
 }
+
 .wrapper {
   width: 25vw;
   max-height: 450px;
@@ -242,4 +242,94 @@ h6 {
 }
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+@media screen and (max-width: 700px){
+  h1 {
+    font-size: 1rem;
+    font-family: "Futura";
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    word-break: normal;
+    line-height: 1;
+  }
+  h2 {
+    font-family: "Futura";
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 1rem;
+    display: inline-block;
+  }
+  h3 {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    color: #fff;
+  }
+  h5 {
+    font-size: 0.8rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 200;
+    color: #fff;
+    text-align: left;
+  }
+  h6 {
+ display: none;
+  }
+  .player-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    width: auto;
+    height: 68%;
+    filter: drop-shadow(10px 10px 24px #000);
+  }
+  .profile-photo {
+    position: relative;
+    bottom: -1px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 200px;
+    filter: drop-shadow(10px 10px 24px #000);
+  }
+  .club-logo {
+    position: relative;
+    display: block;
+    margin-left: -10px;
+    height: 90px;
+  }
+  .front,
+
+.back {
+  background-size: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+  background-position: center;
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  text-align: center;
+  height: 300px;
+  width: 135px;
+  border-radius: 14px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.bottom-section {
+  background: #77d95e;
+  z-index: 999999999;
+  height: 200px;
+  position: absolute;
+  padding: 2rem 2rem 0.2rem 2rem;
+  bottom: 0%;
+  width: 135px;
+  border-radius: 0px 0px 14px 14px;
+}
 }
