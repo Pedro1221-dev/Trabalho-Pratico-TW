@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/0bd012cb65.js"></script>
+    <link rel="icon" href="/Fotos/simbolo_giao.png" type="image/x-icon">
     
-    <title>Grid Layout</title>
+    <title>CDCR GIÃO</title>
 </head>
 <body>
   
@@ -15,7 +16,7 @@
     <section id="bckNavbar">
        <!--NAVBAR-->
       <div class="navbar" id="navbar">
-       <img src="simbolo giao s-fundo.png" alt="Home" width="45px" height="45px">
+       <img src="/Fotos/simbolo_giao.png" alt="Home" width="45px" height="45px">
           <p></p>
           <p><a href="#">Equipa</a></p>
           <p><a href="#">Loja</a></p>
@@ -37,15 +38,15 @@
             <div class="slideshow-container">
 
                 <div class="mySlides fade">
-                <img src="image1.jpg" style="width:100%">
+                <img src="/Fotos/Slider/fundo1.jpg" style="width:100%">
                 </div>
                 
                 <div class="mySlides fade">
-                <img src="image2.jpg" style="width:100%">
+                <img src="/Fotos/Slider/fundo2.jpg" style="width:100%">
                 </div>
                 
                 <div class="mySlides fade">
-                <img src="image3.jpg" style="width:100%">
+                <img src="/Fotos/Slider/fundo3.jpg" style="width:100%">
                 </div>
                 
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -60,14 +61,14 @@
                         <span class="dot" onclick="currentSlide(3)"></span> 
                     </div>
                 </div>
-                <h1>Noticias</h1>
-                <hr>
+                <h1 class="title">Noticias</h1>
+                <hr class="line">
             </div>
             <!-- FIM SLIDESHOW-->
             <div class="grid-noticias">
                 <!-- INICIO Noticias CARDS-->
                 <!-- Noticia CARD Nº1-->
-                <div class="property-card">
+                <div class="property-card"style="background-image: url('/Fotos/Noticias/noticia1.jpg');">
                         <a href="#">
                             <div class="property-image"></div>
                         </a>
@@ -79,7 +80,7 @@
                 <!-- Noticia CARD Nº2-->
                 <div class="property-card">
                     <a href="#">
-                        <div class="property-image"></div>
+                        <div class="property-image" style="background-image: url('/Fotos/Noticias/noticia2.png');"></div>
                     </a>
                     <div class="property-description">
                         <h5> Noticia 2</h5>
@@ -89,20 +90,20 @@
                 <!-- Noticia CARD Nº3-->
                 <div class="property-card">
                   <a href="#">
-                      <div class="property-image"></div>
+                      <div class="property-image" style="background-image: url('/Fotos/Noticias/noticia3.jpg');"></div>
                   </a>
                   <div class="property-description">
-                      <h5> Noticia 2</h5>
+                      <h5> Noticia 3</h5>
                       <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
                   </div>
               </div>
               <!-- Noticia CARD Nº4-->
               <div class="property-card">
                 <a href="#">
-                    <div class="property-image"></div>
+                    <div class="property-image" style="background-image: url('/Fotos/Noticias/noticia4.jpg');"></div>
                 </a>
                 <div class="property-description">
-                    <h5> Noticia 2</h5>
+                    <h5> Noticia 4</h5>
                     <p>Lorem Ipsum Dipsum hortata. Mixcall Horcho. Mixwell Chingo. More Bingo. Lorem Ipum doth be hard.</p>
                 </div>
             </div>
@@ -111,10 +112,21 @@
             </div>
             <div class="flex-tbl-next">
             <div class="next-match">
-              <h1>Encontros deste Mes</h1>
-              <h3>Janeiro</h3>
-              <h4>21 de Janeiro</h4>
-              <p>Giao VS Arvore</p>
+              <h1 class="title">Proximo Encotro</h1>
+              <ol>
+                <li>
+                  <img src="../Fotos/gda.png" alt="Arvore">
+                  <p>Arvore</p>
+                </li>
+                <li>
+                  <h3>Janeiro</h3>
+                  <h4>21 de Janeiro</h4>
+                </li>
+                <li>
+                  <img src="../Fotos/simbolo_giao.png" alt="Arvore">
+                  <p>Giao</p>
+                </li>
+              </ol>
             </div>
             <div class="classificacao">
               <table id="classificacao">
@@ -132,7 +144,7 @@
                 <th>PTS</th>
                 </tr>
                 <!-- 1ºEquipa-->
-                <tr>
+                <tr class="giao">
                   <td>1</td>
                   <td>Giao</td>
                   <td>10</td>
@@ -211,6 +223,14 @@
                 </tr>
               </table>
             </div>
+            </div>
+            <div class="multimedia">
+              <h1 class="title">Multimedia</h1>
+              <hr class="line">
+              <img src="/Fotos/Multimedia/equipa1.jpg" alt="Multimedia1">
+              <img src="/Fotos/Multimedia/equipa2.jpg" alt="Multimedia1">
+              <img src="/Fotos/Multimedia/equipa3.jpg" alt="Multimedia1">
+              <img src="/Fotos/Multimedia/equipa4.jpg" alt="Multimedia1">
             </div>
         </div>
     </section>

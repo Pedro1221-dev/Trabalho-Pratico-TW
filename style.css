@@ -79,7 +79,7 @@
 .grid-conteudo {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 275px 550px;
     position: relative;
     top: -88px;
 }
@@ -87,10 +87,19 @@
     .grid-conteudo {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows:1fr 2fr 1fr;
+        grid-template-rows:1fr 2fr 200px 500px;
         position: relative;
         top: -88px;
     }
+}
+@media screen and (max-width:400px) {
+  .grid-conteudo {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows:1fr 2fr 1fr;
+      position: relative;
+      top: -40px;
+  }
 }
     
 /* Slideshow container */
@@ -194,7 +203,14 @@
   }
 
   /*Noticias*/
-    
+
+        .line{
+          border: 0.5px solid #F7DB01;
+        }
+        .title{
+          margin-block-end: 0em;
+          font-family: Fira Sans,sans-serif;
+        }
         /* grid Noticias */
         .grid-noticias{
             display: grid;
@@ -226,7 +242,6 @@
         position:Absolute;
         top:0px;
         transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-        background-image:url('https://cdn.photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg');
         background-size:cover;
         background-repeat:no-repeat;
         }
@@ -256,12 +271,56 @@
         {
         height:80vh;
         }
+
+        /*Proximo Encontro*/
+        
+        .next-match{
+          width: 100%;
+          text-align: center;
+        }
+
+        .flex-tbl-next{
+          display: flex;
+          align-items: baseline;
+        }
+        @media screen and (max-width: 400px){
+          .flex-tbl-next{
+            display: flex;
+            align-items: baseline;
+            flex-direction: column;
+          }
+        }
+
+        ol{
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
+          list-style: none;
+          padding-inline-start: 0px;
+        }
+
+        .next-match img{
+          width: 50px;
+          height: 50px;
+        }
+        .next-match h3,h4{
+          font-size: 1em;
+        }
+        
+
+      
         /*Tabela de Classificao*/
         #classificacao{
           border-collapse: collapse;
         }
         .classificacao{
+          margin-right: 100px;
           width: 100%; 
+        }
+        @media screen and (max-width: 400px){
+          .classificacao{
+            margin-right: 15px;
+          }
+          
         }
         .classificacao table{
           width: 100%;
@@ -273,16 +332,30 @@
         .classificacao td{
           text-align: center;
         }
-
-        .next-match{
-          width: 100%;
-          text-align: center;
+        .classificacao tr{
+          border-bottom: 0.5px solid #686868ab
         }
-
-        .flex-tbl-next{
-          display: flex;
-          align-items: baseline;
+        
+        .giao{
+           font-weight: bold;
+           color:#03950c;
+           font-size: 18px;
         }
+      
+      
+      /*Multimedia*/
+      
+      .multimedia img{
+        width: 400px;
+        height: 250px;
+        opacity:0.5;
+        transition: 1s ease
+      }
+
+      .multimedia img:hover{
+        opacity:1;
+        transition: 1s ease;
+      }
 
 
 /*Footer*/
