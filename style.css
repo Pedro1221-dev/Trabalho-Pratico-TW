@@ -77,31 +77,22 @@ body{
   /* Fim do css da navbar*/
 /*Conteudo*/
 .grid-conteudo {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 275px 550px;
-  position: relative;
-  top: -88px;
-}
-@media screen and (max-width:800px) {
-  .grid-conteudo {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows:1fr 2fr 200px 500px;
-      position: relative;
-      top: -88px;
-  }
-}
-@media screen and (max-width:400px) {
-.grid-conteudo {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows:1fr 2fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
     position: relative;
-    top: -40px;
+    top: -88px;
 }
+@media screen and (max-width:800px) {
+    .grid-conteudo {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:1fr 2fr 1fr;
+        position: relative;
+        top: -88px;
+    }
 }
-  
+    
 /* Slideshow container */
 .slideshow-container {
   position: relative;
@@ -202,21 +193,14 @@ body{
   .prev, .next,.text {font-size: 11px}
 }
 
-/*Noticias*/
-
-      .line{
-        border: 0.5px solid #F7DB01;
-      }
-      .title{
-        margin-block-end: 0em;
-        font-family: Fira Sans,sans-serif;
-      }
-      /* grid Noticias */
-      .grid-noticias{
-          display: grid;
-          grid-template-columns: repeat(2,1fr);
-          grid-template-rows: repeat(2,1fr);
-      }
+  /*Noticias*/
+    
+        /* grid Noticias */
+        .grid-noticias{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+        }
 
       /*INICIO CARDS NOTICIAS*/
       .property-card
@@ -234,17 +218,18 @@ body{
 
       /* Top Half of card, image. */
 
-      .property-image
-      {
-      height:40vh;
-      width:40vw;
-      padding:1em 2em;
-      position:Absolute;
-      top:0px;
-      transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-      background-size:cover;
-      background-repeat:no-repeat;
-      }
+        .property-image
+        {
+        height:40vh;
+        width:40vw;
+        padding:1em 2em;
+        position:Absolute;
+        top:0px;
+        transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+        background-image:url('https://cdn.photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg');
+        background-size:cover;
+        background-repeat:no-repeat;
+        }
 
       /* Bottom Card Section */
 
@@ -262,108 +247,42 @@ body{
 
       /* Property Cards Hover States */
 
-      .property-card:hover .property-description
-      {
-      height:0em;
-      padding:0px 1em;
-      }
-      .property-card:hover .property-image
-      {
-      height:80vh;
-      }
+        .property-card:hover .property-description
+        {
+        height:0em;
+        padding:0px 1em;
+        }
+        .property-card:hover .property-image
+        {
+        height:80vh;
+        }
+        /*Tabela de Classificao*/
+        #classificacao{
+          border-collapse: collapse;
+        }
+        .classificacao{
+          width: 100%; 
+        }
+        .classificacao table{
+          width: 100%;
+        }
+        .classificacao th{
+          background-color: #04AA6D;
+          color: white;
+        }
+        .classificacao td{
+          text-align: center;
+        }
 
-      /*Proximo Encontro*/
-      
-      .next-match{
-        width: 100%;
-        text-align: center;
-      }
+        .next-match{
+          width: 100%;
+          text-align: center;
+        }
 
-      .flex-tbl-next{
-        display: flex;
-        align-items: baseline;
-      }
-      @media screen and (max-width: 400px){
         .flex-tbl-next{
           display: flex;
           align-items: baseline;
-          flex-direction: column;
         }
-      }
-
-      ol{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        list-style: none;
-        padding-inline-start: 0px;
-      }
-
-      .next-match img{
-        width: 50px;
-        height: 50px;
-      }
-      .next-match h3,h4{
-        font-size: 1em;
-      }
-      
-
-    
-      /*Tabela de Classificao*/
-      #classificacao{
-        border-collapse: collapse;
-      }
-      .classificacao{
-        margin-right: 100px;
-        width: 100%; 
-      }
-      @media screen and (max-width: 400px){
-        .classificacao{
-          margin-right: 15px;
-        }
-        
-      }
-      .classificacao table{
-        width: 100%;
-      }
-      .classificacao th{
-        background-color: #04AA6D;
-        color: white;
-      }
-      .classificacao td{
-        text-align: center;
-      }
-      .classificacao tr{
-        border-bottom: 0.5px solid #686868ab
-      }
-      
-      .giao{
-         font-weight: bold;
-         color:#03950c;
-         font-size: 18px;
-      }
-    
-    
-    /*Multimedia*/
-
-    .multimedia img{
-      width: 400px;
-      height: 250px;
-      opacity:0.5;
-      transition: 1s ease
-    }
-    @media screen and (max-width:800px) {
-      .multimedia img{
-        width: 290px;
-        height: 175px;
-        opacity:0.5;
-        transition: 1s ease
-      }
-    }
-
-    .multimedia img:hover{
-      opacity:1;
-      transition: 1s ease;
-    }
 
 
 /*Footer*/
