@@ -4,36 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="css_login.css">
+    <script src="script_login.js"></script>
+    <script src="https://kit.fontawesome.com/0bd012cb65.js"></script>
+    <title>Document</title>
 </head>
 <body>
-    <button class="open-button" onclick="openForm()">Open Form</button>
-
-<div class="form-popup" id="myForm">
-  <form action="#" class="form-container">
-    <h1>Login</h1>
-
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit" class="btn">Login</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
-</div>
-
-<script>
-    function openForm() {
-      document.getElementById("myForm").style.display = "block";
-    }
+    <div class="grid">
+        <section id="bckNavbar">
+           <!--NAVBAR-->
+          <div class="navbar" id="navbar">
+           <img src="simbolo giao s-fundo.png" alt="Home" width="45px" height="45px">
+              <p></p>
+              <p><a href="#">Equipa</a></p>
+              <p><a href="#">Loja</a></p>
+              <p></p>
+            <p>
+             <a href="#"><i class="fa-solid fa-search"></i></a>
+             <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+             <a href="#" onclick="openForm()"><i class="fa-solid fa-user"></i></a>
+              </a>
+            </p>
+          </div>
     
-    function closeForm() {
-      document.getElementById("myForm").style.display = "none";
-    }
-    </script>
-
+    
+    <div class="form-popup" id="myForm">
+        <div class="wrapper">
+        <form class="login">
+        
+            <p class="title">Log in</p>
+            <div class="icon">
+              <a href="#close" onclick="closeForm()"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <input type="text" placeholder="Username" autofocus required/>
+            <i class="fa fa-user"></i>
+            <input type="password" placeholder="Password" required/>
+            <i class="fa fa-key"></i>
+            <a href="#registo">Não tem conta? Crie uma</a>
+          <br>
+           
+          <button>
+              <i class="spinner"></i>
+              <span class="state">Log in</span>
+            </button>
+          
+            
+        </form>
 </body>
 </html>
